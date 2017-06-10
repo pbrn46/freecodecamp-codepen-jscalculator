@@ -1,0 +1,108 @@
+<!--
+     FreeCodeCamp JS Calculator
+     Boris Wong 2017-06-09
+
+     CodePen.io Javascript Requirements:
+     jQuery
+     AngularJS
+     Bootstrap 4 (+ Tether)
+
+     CodePen.io CSS Requirements:
+     Bootstrap 4
+
+   -->
+<div ng-app="jsCalc" ng-controller="mainCalc as main" class="container text-center">
+  <div class="jumbotron">
+    <h3>FreeCodeCamp Javascript Calculator Challenge</h3>
+    <p>It works better than the demo in the challenge!</p>
+  </div>
+
+  <div class="container p-2 my-3 rounded calcBody">
+
+    <div class="p-2 rounded mb-1 calcDisplayWindow">
+      <div class="p-1 rounded calcDisplayWindowInner">
+        <div class="text-right calcResults">
+          {{main.display.total}}
+        </div>
+        <div class="text-right calcFormula">
+          {{main.display.oldFormula}}{{main.display.formula}}
+        </div>
+      </div>
+    </div>
+
+    <div class="p-2 rounded calcButtons">
+      <div class="row">
+        <div class="col col-3">
+          <button ng-click="main.onBtnClick($event, 'AC')" class="btn btn-outline-danger btn-block">AC</button>
+        </div>
+        <div class="col col-3">
+          <button ng-click="main.onBtnClick($event, 'CE')" class="btn btn-outline-danger btn-block">CE</button>
+        </div>
+        <div class="col col-3">
+          <button ng-click="main.onBtnClick($event, '/')" class="btn btn-outline-secondary btn-block">&divide;</button>
+        </div>
+        <div class="col col-3">
+          <button ng-click="main.onBtnClick($event, '*')" class="btn btn-outline-secondary btn-block">&times;</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-3">
+          <button ng-click="main.onBtnClick($event, '7')" class="btn btn-outline-secondary btn-block">7</button>
+        </div>
+        <div class="col col-3">
+          <button ng-click="main.onBtnClick($event, '8')" class="btn btn-outline-secondary btn-block">8</button>
+        </div>
+        <div class="col col-3">
+          <button ng-click="main.onBtnClick($event, '9')" class="btn btn-outline-secondary btn-block">9</button>
+        </div>
+        <div class="col col-3">
+          <button ng-click="main.onBtnClick($event, '-')" class="btn btn-outline-secondary btn-block">-</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-3">
+          <button ng-click="main.onBtnClick($event, '4')" class="btn btn-outline-secondary btn-block">4</button>
+        </div>
+        <div class="col col-3">
+          <button ng-click="main.onBtnClick($event, '5')" class="btn btn-outline-secondary btn-block">5</button>
+        </div>
+        <div class="col col-3">
+          <button ng-click="main.onBtnClick($event, '6')" class="btn btn-outline-secondary btn-block">6</button>
+        </div>
+        <div class="col col-3">
+          <button ng-click="main.onBtnClick($event, '+')" class="btn btn-outline-secondary btn-block">+</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-9">
+          <div class="row">
+            <div class="col col-4">
+              <button ng-click="main.onBtnClick($event, '1')" class="btn btn-outline-secondary btn-block">1</button>
+            </div>
+            <div class="col col-4">
+              <button ng-click="main.onBtnClick($event, '2')" class="btn btn-outline-secondary btn-block">2</button>
+            </div>
+            <div class="col col-4">
+              <button ng-click="main.onBtnClick($event, '3')" class="btn btn-outline-secondary btn-block">3</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-8">
+              <button ng-click="main.onBtnClick($event, '0')" class="btn btn-outline-secondary btn-block">0</button>
+            </div>
+            <div class="col col-4">
+              <button ng-click="main.onBtnClick($event, '.')" class="btn btn-outline-secondary btn-block">.</button>
+            </div>
+          </div>
+        </div>
+        <div class="col col-3">
+          <button ng-click="main.onBtnClick($event, '=')" class="btn btn-outline-danger btn-block h-100">=</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="container text-center footer">
+  <p>Written by Boris Wong, 2017-06-09</p>
+</div>
