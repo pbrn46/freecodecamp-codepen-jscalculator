@@ -14,8 +14,17 @@ div.calcBody {
   box-shadow: 5px 5px 15px black;
 }
 
+ul {
+  display: inline-block;
+  text-align: left;
+}
+
 .footer {
   color: #dbe;
+}
+
+kbd.calc {
+  background-color: #800;
 }
 
 
@@ -32,11 +41,12 @@ div.calcDisplayWindowInner {
   font-family: monospace;
 }
 
-div.calcResults {
-  font-size: 50px;
+div.calcRegister {
+  font-size: 35px;
 }
 
-div.calcFormula {
+div.calcFormula pre {
+  overflow-y: hidden;
 }
 
 
