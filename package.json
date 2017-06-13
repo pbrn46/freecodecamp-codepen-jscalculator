@@ -25,9 +25,10 @@
     "url": "git+https://github.com/pbrn46/freecodecamp-codepen-jscalculator.git"
   },
   "author": "Boris Wong",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/pbrn46/freecodecamp-codepen-jscalculator/issues"
   },
-  "homepage": "https://github.com/pbrn46/freecodecamp-codepen-jscalculator#readme"
+  "homepage": "https://github.com/pbrn46/freecodecamp-codepen-jscalculator#readme",
+  "false": {}
 }
